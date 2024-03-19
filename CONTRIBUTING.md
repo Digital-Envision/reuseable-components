@@ -45,20 +45,24 @@ pnpm install
 All the following components in this monorepo is required to follow the following code structures:
 
 ```bash
-├── FRAMEWORK-NAME
-│ ├── components # contains all the components for the frameworks
-│ ├── ├── utils # contains all the utilities for the components
-│ ├── ├── index.(js,ts) # the starting point of the components
+├── components
+│ ├── FRAMEWORK-NAME
+│ ├── ├── stories # contains all the components for the frameworks
+│ ├── ├── ├── utils # contains all the utilities for the components
+│ ├── ├── ├── index.(js,ts) # the starting point of the components
+│ ├── ├── ├── index.stories.(js,ts) # the starting point of the components stories
 ```
 
 In case you want to add your own folder to the components, keep everything on the same components folder. For example you want to add an email template, you use the following structures:
 
 ```bash
-├── FRAMEWORK-NAME
-│ ├── components # contains all the components for the frameworks
-│ ├── ├── store # contains all the necessary files for the store/context
-│ ├── ├── utils # contains all the utilities for the components
-│ ├── ├── index.(js,ts) # the starting point of the components
+├── components
+│ ├── FRAMEWORK-NAME
+│ ├── ├── stories # contains all the components for the frameworks
+│ ├── ├── ├── store # contains all the necessary files for the store/context
+│ ├── ├── ├── utils # contains all the utilities for the components
+│ ├── ├── ├── index.(js,ts) # the starting point of the components
+│ ├── ├── ├── index.stories.(js,ts) # the starting point of the components stories
 ```
 
 ### When you're done
